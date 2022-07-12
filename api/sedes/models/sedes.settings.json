@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sedes",
+  "info": {
+    "name": "Sedes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "text"
+    },
+    "descricao": {
+      "type": "richtext"
+    },
+    "localizacao": {
+      "type": "richtext"
+    },
+    "infra": {
+      "type": "richtext"
+    },
+    "diretoria": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nome"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
