@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/quem-somos",
+      "handler": "quem-somos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/quem-somos/count",
+      "handler": "quem-somos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/quem-somos/:id",
+      "handler": "quem-somos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/quem-somos",
+      "handler": "quem-somos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/quem-somos/:id",
+      "handler": "quem-somos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/quem-somos/:id",
+      "handler": "quem-somos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quem_somos",
+  "info": {
+    "name": "Quem Somos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "texto": {
+      "type": "richtext"
+    }
+  }
+}
