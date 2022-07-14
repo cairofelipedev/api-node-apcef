@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "esportes",
+  "info": {
+    "name": "Esportes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "horarios": {
+      "type": "richtext"
+    },
+    "valores": {
+      "type": "richtext"
+    },
+    "imagem": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nome"
+    }
+  }
+}

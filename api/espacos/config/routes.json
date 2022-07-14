@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/espacos",
+      "handler": "espacos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/espacos/count",
+      "handler": "espacos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/espacos/:id",
+      "handler": "espacos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/espacos",
+      "handler": "espacos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/espacos/:id",
+      "handler": "espacos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/espacos/:id",
+      "handler": "espacos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
